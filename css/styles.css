@@ -1,0 +1,154 @@
+/* 
+Оформлення​
+«C1» Відсутні глобальні стилі елементів, крім <body>.
+«C2» Для оформлення використовуються селектори класу.
+«C3» В стилях відсутній !important.
+«C4» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в макеті (зміна кольору).
+«С5» Текст контактів в хедері і футері змінює колір при ховері і фокусі.
+«C6» Для зберігання палітри кольорів макета (текст, фон, виділення) використовуються CSS-змінні.
+«С7» Для елемента <body> задана властивість font-family з домінантним шрифтом на макеті Roboto.
+«С8» Вказані альтернативні варіанти шрифту і тип сімейства (без зарубок) в кінці переліку font-family в елемента <body>.
+«С9» Сімейство шрифтів Roboto явно задане тільки для елемента <body>, інші елементи наслідують його.
+«С10» Для елемента <body> задана властивість color з кольором тексту, домінантним на макеті. Решта тексту наслідує або перекриває це значення.
+«С11» Розмір шрифту (властивість font-size) всіх текстових елементів точно відповідає значенням з макета.
+«С12» Висота рядка (властивість line-height) всіх текстових елементів точно відповідає значенням з макета і задана як множник, а не в px.
+«С13» Колір (властивість color) всіх текстових елементів точно відповідає значенням з макета.
+«С14» Вага шрифту (властивість font-weight) всіх текстових елементів точно відповідає значенням з макета.
+«С15» Вага шрифту (властивість font-weight) явно вказана тільки, якщо значення в макеті відрізняється від стандартного для цього елемента в браузері.
+«С16» Кнопкам задана властивість cursor зі значенням pointer.
+«С17» У стилях не повторюються значення властивостей, які задані браузером за замовчуванням. Наприклад, посиланням не потрібно вказувати cursor: pointer, а абзацам font-style: normal або font-weight: 400.
+*/
+
+/*
+основной текст #757575
+лого основной #000000
+текст акцент #2196F3
+заголовок герой #FFFFFF
+заголовок #212121
+*/
+
+/* 
+фон #F5F5F5
+фон вторичный #F5F4FA
+фон герой + футер #2F303A
+ */
+
+:root {
+    /* text */
+    --primary-text-colour: #757575;
+    --title-text-colour: #212121;
+    --logo-text-color: #000000;
+    --accent-text-color: #2196F3;
+    --hero-text-color: #FFFFFF;
+    /* background */
+    --primary-bgr-color: #F5F5F5;
+    --secondary-bgr-color: #F5F4FA;
+    --footer-brt-color: #2F303A;
+}
+
+body {
+    background-color: var(--primary-bgr-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-colour);
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
+
+.logo-accent {
+    color: var(--logo-text-color);
+}
+
+.nav .link {
+    color: var(--title-text-colour);
+}
+
+.nav .link:hover,
+.nav .link:focus {
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
+/* Hero */
+
+.head {
+    background-color: var(--footer-brt-color);
+}
+
+.head-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+}
+
+.btn-blue {
+    color: var(--hero-text-color);
+    background-color: var(--accent-text-color);
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: transparent;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    color: var(--accent-text-color);
+    background-color: var(--secondary-bgr-color);
+    cursor: pointer;
+}
+
+.section-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--title-text-colour);
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--title-text-colour);
+}
+
+.team {
+    background-color: var(--secondary-bgr-color);
+}
