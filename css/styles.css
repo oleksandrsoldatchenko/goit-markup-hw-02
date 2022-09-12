@@ -43,6 +43,10 @@ body {
 .nav .link {
     text-decoration: none;
     color: var(--title-text-colour);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .nav .link:hover,
@@ -53,6 +57,10 @@ body {
 .link-contact {
     text-decoration: none;
     color: var(--title-text-colour);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .link-contact:hover,
@@ -71,7 +79,7 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -81,17 +89,11 @@ body {
 .btn-blue {
     color: var(--hero-text-color);
     background-color: var(--accent-text-color);
-    width: 216px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    border: transparent;
 }
 
 .btn-blue:hover,
@@ -134,7 +136,11 @@ body {
 }
 
 .team-role {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -168,16 +174,11 @@ body {
 .btn-gray {
     color: var(--title-text-colour);
     background-color: var(--secondary-bgr-color);
-    /* width: 216px; */
-    height: 38px;
-    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    border: transparent;
 }
 
 .btn-gray:hover,
